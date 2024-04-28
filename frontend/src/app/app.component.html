@@ -1,0 +1,21 @@
+  <div>
+    <app-home class="home"></app-home>
+  </div>
+  
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav ml-auto" *ngIf="!user">
+      <li class="nav-item">
+        <a (click)="signInWithGoogle()" class="nav-link">Sign in with Google</a>
+      </li>
+    </div>
+    <div class="navbar-nav ml-auto" *ngIf="user">
+    <span class="navbar-text" *ngIf="user && user.email">
+     {{ user.email }}
+    </span>	
+      <li class="nav-item">
+        <a class="nav-link" (click)="signOut()">Logout</a>
+      </li>
+    </div>	  
+  </nav>
+</div>

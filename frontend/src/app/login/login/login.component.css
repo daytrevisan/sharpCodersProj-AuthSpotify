@@ -1,0 +1,17 @@
+.body {
+    background-image: linear-gradient(#272727, #030303);
+}
+
+.container-login {
+    background-image: linear-gradient(#000, #121212);
+}
+
+.logo {
+    height: 30px;
+    width: auto
+}
+
+.btn-login-google {
+    border: 1px solid #FFF;
+    border-radius: 10px;
+}
