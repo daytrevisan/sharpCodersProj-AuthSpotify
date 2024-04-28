@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LogNavbarComponent } from './log-navbar.component';
+import { LogadoComponent } from './logado.component';
 
-describe('LogNavbarComponent', () => {
-  let component: LogNavbarComponent;
-  let fixture: ComponentFixture<LogNavbarComponent>;
+describe('LogadoComponent', () => {
+  let component: LogadoComponent;
+  let fixture: ComponentFixture<LogadoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LogNavbarComponent]
+      imports: [LogadoComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(LogNavbarComponent);
+    fixture = TestBed.createComponent(LogadoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,9 +5,14 @@ import {
   SocialUser,
   GoogleLoginProvider
 } from 'angularx-social-login';
+import { HeaderComponent } from './home/header/header.component';
+import { MainComponent } from './home/main/main.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [HeaderComponent, MainComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -45,6 +50,6 @@ export class AppComponent {
 
   signOut(): void {
     this.authService.signOut();
-	this.hasApiAccess = false;
+	  this.hasApiAccess = false;
   }  
 }

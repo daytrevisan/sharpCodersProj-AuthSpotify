@@ -1,8 +1,11 @@
-  <div>
-    <app-home class="home"></app-home>
-  </div>
+<main>
+  <!-- <app-home class="home"></app-home> -->
+  <app-header class="header"></app-header>
+  <app-main class="main"></app-main>
+  <app-footer class="footer"></app-footer>
+</main>
   
-<div>
+<!-- <div>
   <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="navbar-nav ml-auto" *ngIf="!user">
       <li class="nav-item">
@@ -10,12 +13,12 @@
       </li>
     </div>
     <div class="navbar-nav ml-auto" *ngIf="user">
-    <span class="navbar-text" *ngIf="user && user.email">
-     {{ user.email }}
+    <span class="navbar-text">
+     {{ user?.email }}
     </span>	
       <li class="nav-item">
         <a class="nav-link" (click)="signOut()">Logout</a>
       </li>
     </div>	  
   </nav>
-</div>
+</div> -->

@@ -13,19 +13,16 @@ import { HeaderComponent } from './home/header/header.component';
 import { MainComponent } from './home/main/main.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { LoginComponent } from './login/login/login.component';
-import { LogNavbarComponent } from './logado/log-navbar/log-navbar.component';
-import { LogMainComponent } from './logado/log-main/log-main.component';
+
 
 @NgModule({
     declarations: [
-        AppComponent,
-        HomeComponent,
-        HeaderComponent,
-        MainComponent,
-        FooterComponent,
-        LoginComponent,
-        LogNavbarComponent,
-        LogMainComponent
+        // AppComponent,
+        // HomeComponent,
+        // HeaderComponent,
+        // MainComponent,
+        // FooterComponent,
+        // LoginComponent,
     ],
     imports: [
         BrowserModule,
@@ -49,7 +46,7 @@ import { LogMainComponent } from './logado/log-main/log-main.component';
             } as SocialAuthServiceConfig,
         }
     ],
-    bootstrap: [AppComponent]
+    // bootstrap: [AppComponent]
 })
 
 export class AppModule { }
